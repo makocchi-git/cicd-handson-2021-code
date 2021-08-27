@@ -19,6 +19,7 @@ EXPOSE 9090
 
 # [追加] golang:1.16でビルドしたアプリケーションをコピー
 COPY --from=builder apps/server-run /.
+COPY web /web
 
 # アプリ実行
-CMD [ "./server-run" ]
+CMD [ "/server-run" ]
