@@ -23,3 +23,4 @@ COPY web /web
 
 # アプリ実行
 CMD [ "/server-run" ]
+
